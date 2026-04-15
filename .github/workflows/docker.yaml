@@ -11,5 +11,6 @@ jobs:
       - name: Build
   uses: docker/build-push-action@v6
   with:
+    file: python-webapp.Dockerfile
     push: false
     tags: pythonapp:latest
